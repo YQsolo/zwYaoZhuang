@@ -1,0 +1,777 @@
+@import "public.scss";
+@mixin bx(){
+	width:1100px;
+	margin:0 auto;
+}
+@mixin gwcbutton(){
+	background:#ff643c;
+	width: 90px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+	display: inline-block;
+}
+@mixin bxdetails(){
+	width:960px;
+	margin:0 auto;
+}
+@mixin detailspan(){
+	width: 5px;
+    height: 18px;
+    background: #00c8ff;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+$bodybg:#f6f6f3;
+$menubg:#00c8ff;
+#fixed{
+	text-align: center;
+	width:35px;
+	height:100%;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index: 20;
+	background:#6c6c6c;
+	div{
+		position:absolute;
+		width:35px;
+		line-height: 35px;
+		height:35px;
+		font-family:"微软雅黑";
+		font-size:12px;
+		color:#fff;
+		&:hover{
+			background:$menubg;
+		}
+		&:nth-of-type(1){
+			top:197px;
+		}
+		&:nth-of-type(2){
+			top:253px;
+			height:127px;
+		}
+		&:nth-of-type(3){
+			top:405px;
+		}
+		&:nth-of-type(4){
+			top:448px;
+		}
+		&:nth-of-type(5){
+			top:609px;
+		}
+		&:nth-of-type(6){
+			top:674px;
+		}
+		&:nth-of-type(7){
+			top:739px;
+		}
+	}
+}
+body{
+	background:$bodybg;
+}
+header{
+	#header_top{
+		height:29px;
+		border-bottom: 1px solid #e5e5e5;
+		background:#f2f2f2;
+		.bxdetails{
+			@include bxdetails();
+			height:29px;
+			color:#6c6c6c;
+			.left{
+				height:29px;
+				span{
+				height:29px;
+				line-height: 29px;
+			}
+				a{
+					height:29px;
+					margin:0 14px;
+				}
+			}
+			.right{
+				color:#c4c4c4;
+				position:relative;
+				a{
+					width:80px;
+					height:29px;
+					line-height:29px;
+					text-align: center;
+					&:hover{
+						background:#fff;
+					}
+				}
+				#right_span01{
+					width:80px;
+					height:0px;
+					overflow: hidden;
+					position:absolute;
+					left:0;
+					top:30px;
+					img{
+						width:80px;
+						height:80px;
+					}
+				}
+				#right_span02{
+					position:absolute;
+					left:166px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					overflow: hidden;
+					height:0;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height:32px;
+
+						}
+					}
+				}
+				#right_span03{
+					position:absolute;
+					left:255px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					height:0;
+					overflow: hidden;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height: 32px;
+						}
+					}
+				}
+			}				
+		}
+	}
+	#search{
+		height:108px;
+		background:#fff;
+		.bxdetails{
+			@include bxdetails();
+			height:108px;
+			img{
+				cursor: pointer;
+			}
+			#search_1{
+				margin-top:25px;
+				margin-left:80px;
+				input[type=text]{
+					width:323px;
+					height:36px;
+					border:2px solid #00c8ff;
+					padding:0 0 0 5px;
+				}
+				input[type=button]{
+					width:88px;
+					height:40px;
+					background:#00c8ff;
+					color:#fff;
+					font-size:16px;
+					font-weight: bold;
+				}
+				ul{
+					li{
+						display:inline-block;
+						margin-top:8px;
+						a{
+							border-right:1px solid #c4c4c4;
+							text-align: center;
+							padding:0 7px 0 5px;
+						}
+						&:last-child{
+							a{
+								border:0;
+							}
+						}
+					}
+					
+				}
+			}
+			#search_2{
+				margin-top:26px;
+				width:124px;
+				height:36px;
+				line-height: 36px;
+				text-align: center;
+				border-radius:5px;
+				box-shadow: 0 0 10px #c8c8c8;
+			}
+		}
+	}
+	#menu{
+		background:$menubg;
+		overflow: hidden;
+		height:35px;
+		.bxdetails{
+			@include bxdetails();
+			height:35px;
+			ul{
+				&:nth-of-type(1){
+					.menu_this{
+						background:#00647f;
+					}
+					li{
+						font-size:14px;
+						float:left;
+						color:#fff;
+						background:#00c8ff;
+						display:inline-block;
+						width:120px;
+						height:35px;
+						line-height: 35px;
+						text-align: center;
+						&:hover{
+							background:#00647f;
+						}
+						&:last-child{
+							background:url(../images/home_overseas.gif);
+							&:hover{
+								background:url(../images/home_overseas_current.gif);
+							}
+						}
+					}
+				}
+				&:nth-of-type(2){
+					float:right;
+					li{
+						cursor: pointer;
+						width:0px;
+						overflow: hidden;
+						font-family: "微软雅黑";
+						font-size:14px;
+						padding-left:30px;
+						color:#fff;
+						display:inline-block;
+						height:35px;
+						line-height: 35px;
+						background:url(../images/assure2.png) no-repeat;
+						&:nth-of-type(1){
+							background-position: 0 0;
+						}
+						&:nth-of-type(2){
+							background-position: 0 -35px;
+						}
+						&:nth-of-type(3){
+							background-position: 0 -105px;
+						}
+						&:nth-of-type(4){
+							background-position: 0 -70px;
+						}
+					}
+				}
+				
+			}	
+		}	
+	}
+	#banner{
+		height:350px;
+		overflow: hidden;
+		position:relative;
+		div{
+			z-index:1;
+			display: none;
+			width:100%;
+			height:100%;
+			position:absolute;
+			&:nth-of-type(1){
+				background:url(../images/lunbo1.jpg) center;
+			}
+			&:nth-of-type(2){
+				background:url(../images/lunbo2.jpg) center;
+			}
+			&:nth-of-type(3){
+				background:url(../images/lunbo3.jpg) center;
+			}
+			&:nth-of-type(4){
+				background:url(../images/lunbo4.jpg) center;
+			}
+			&:nth-of-type(5){
+				background:url(../images/lunbo5.jpg) center;
+			}
+		}
+		.show{
+			z-index: 3;
+			display:block;
+			animation:scale 2s linear 0s;
+		}
+		ul{
+			width:100px;
+			height:10px;
+			position:absolute;
+			top:320px;
+			z-index:5;
+			li{
+				margin:0 2px;
+				display: inline-block;
+				width:10px;
+				height:10px;
+				background:#6c6c6c;
+			}
+			.current{
+				width:10px;
+				height:10px;
+				background:#00c8ff;
+			}
+		}
+	}
+}
+#details_main{
+	margin-top:20px;
+	overflow: hidden;
+	padding-bottom:30px;
+	.bxdetails{
+		@include bxdetails();
+		#bxdetails_01{
+			background:#fff;
+			height:471px;
+			ul{
+				padding-left:30px;
+				height: 40px;
+				line-height:40px;
+	    		background: #fff;
+	    		border-bottom:1px #f6f6f3 solid;
+	    		li{
+	    			display: inline-block;
+	    			cursor: pointer;
+	    			font-weight: bold;
+	    			color:#6c6c6c;
+	    			&:last-child{
+	    				color:#ff643c;
+	    			}
+	    		}
+	    		span{
+	    			margin:0 10px;
+	    			font-size:18px;
+	    			font-weight: bold;
+	    		}
+			}
+			#details_content_left{
+				margin:20px;
+			}
+			#details_content_right{
+				#details_content_right01{
+					width:490px;
+					margin-top:40px;
+					h2{
+						font-size: 16px;
+						height:52px;
+						line-height: 52px;
+					}
+					div{
+						&:first-of-type{
+							font-size: 20px;
+	    					color: rgb(255, 100, 60);
+	    					span{
+	    						font-size: 36px;
+	    					}
+						}
+						&:nth-of-type(2){
+							border-top: 1px #c4c4c4 solid;
+						    border-bottom: 1px #c4c4c4 solid;
+						    height: 31px;
+						    margin-top: 12px;
+						    padding-top:13px;
+							span{ 
+								display: inline-block;
+								float: left;
+								&:nth-of-type(2){
+									width: 87px;
+									background:url(../images/xingji.png) no-repeat;
+									background-position: 0 -20px;
+									height:20px;
+									margin:0 15px;
+								}	
+							}	
+						}
+						&:nth-of-type(3){
+							margin-top:20px;
+							overflow: hidden;
+							span{
+								float:left;
+								height:30px;
+								line-height: 30px;
+							}
+							div{
+								float: left;
+								display: inline-block;
+								border:1px solid #ccc;
+								margin:0 20px;
+								span{
+									color:#ccc;
+									float:left;
+									display: inline-block;
+									width:30px;
+									height:30px;
+									line-height: 30px;
+									text-align: center;
+									cursor: pointer;	
+								}
+								input[type=text]{
+									float:left;
+									width:30px;
+									height:30px;
+									line-height: 30px;
+									text-align: center;
+								}
+							}
+							a{
+								float: left;
+								color:$menubg;
+								height:30px;
+								line-height: 30px;
+							}
+						}
+						&:nth-of-type(4){
+							overflow: hidden;
+							margin-top:20px;
+							span{
+								&:first-of-type{
+									float:left;
+									cursor: pointer;
+									display: inline-block;
+								    width: 137px;
+								    height: 45px;
+								    line-height: 45px;
+								    color: rgb(255, 255, 255);
+								    font-family: 微软雅黑;
+								    font-size: 24px;
+								    padding-left: 63px;
+								    background: url(../images/xingji.png) 0px -78px no-repeat rgb(255, 100, 60);
+								}
+								&:last-of-type{
+									margin-left:30px;
+									float: left;
+								    color: #c4c4c4;
+								    cursor: pointer;
+								    padding-left: 23px;
+								    margin-top: 17px;
+								    background: url(../images/xingji.png) no-repeat 0 -58px;
+								}
+							}
+						}
+					}
+					p{
+						margin-top:10px;
+						span{
+							display: inline-block;
+							width: 40px;
+						    height: 20px;
+						    line-height: 20px;
+						    background: #00c8ff;
+						    color: #fff;
+						    text-align: center;
+						    margin-right: 9px;
+						}
+					}
+				}
+			}
+		}
+		#bxdetails_02{
+			margin-top:30px;
+			background:#fff;
+			ul{
+				padding:20px 0;
+				li{
+					display: inline-block;
+					height:22px;
+					line-height: 22px;
+					font-size: 14px;
+					margin:0 10px;
+					&:not(:first-child){
+						color:$menubg;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		h2{
+			font-weight: 100;
+		}
+		#bxdetails_03{
+			width:100%;
+			height:345px;
+			margin-top:20px;
+			.bxdetails_flex{
+				width:100%;
+				height:345px;
+				display:flex;
+				flex-flow:row wrap;
+				justify-content:space-between;
+				div{
+					background:#fff;
+					width:225px;
+					height:325px;
+					img{
+						width:225px;
+						height:225px;
+					}
+					p{
+						padding:5px;
+						height: 42px;
+					    display: block;
+					    line-height: 20px;
+					    color: #6c6c6c;
+					    &:last-of-type{
+					    	label{
+					    		font-size: 26px;
+    							color: #ff643c;
+    							span{
+    								font-size: 14px;
+    							}
+					    	}
+					    	a{			    		
+				    			@include gwcbutton();
+					    	}
+					    }
+					}
+				}
+			}
+		}
+		#bxdetails_04{
+			.left{
+				width:230px;
+				background:#fff;
+				label{
+					font-size:14px;
+					font-weight:bold;
+				}
+				ul{
+					margin-top:10px;
+					padding:5px;
+					li{
+						overflow: hidden;
+						height:98px;
+						img{
+							width:88px;
+							height:88px;
+							border:1px solid #fff;
+							&:hover{
+								border:1px solid #ccc;
+							}
+						}
+						span{
+							padding:5px;
+						}
+						label{
+							float:left;
+							margin-top:20px;
+							color:#f60;
+						}
+					}
+				}		
+			}
+			.right{
+				#bxdetails_04_head{
+					width:710px;
+					background:#fff;
+					ul{
+						height:40px;
+						line-height: 40px;
+						width:480px;
+						background:#6c6c6c;
+						li{
+							display: inline-block;
+							a{
+								display: inline-block;
+								font-size: 14px;
+								color:#fff;
+								width:110px;
+								text-align: center;
+								font-weight: bold;
+							}
+						}
+					}
+					div{
+						float: right;
+					    width: 230px;
+					    height: 40px;
+					    line-height: 42px;
+					    background: #00c8ff;
+					    label{
+					    	margin-left:10px;
+					    	font-size: 30px;
+					    	font-weight: bold;
+							span{
+								font-size: 16px;
+								font-weight: 100;
+							}
+					    }
+					    a{
+					    	float:right;
+					    	margin-top:7px;
+					    	margin-right:10px;
+					    	@include gwcbutton();
+					    }
+					}
+				}
+				#bxdetails_04_main{
+					padding:20px;
+					background:#fff;
+					overflow: hidden;
+					h1{
+						font-size: 18px;
+					    padding-bottom: 5px;
+					    border-bottom: 1px solid rgb(196, 196, 196);
+						span{
+							@include detailspan();
+						}
+					}
+					ul{
+						li{
+							height:25px;
+							line-height: 25px;
+						}
+					}
+				}	
+				#bxdetails_04_img{
+					padding:20px;
+					background:#fff;
+					overflow: hidden;
+					h1{
+						font-size: 18px;
+					    padding-bottom: 5px;
+					    border-bottom: 1px solid rgb(196, 196, 196);
+						span{
+							@include detailspan();
+						}
+					}
+					div{
+						width:660px;
+					}
+				}
+			}
+		}
+	}		
+}
+footer{
+	background:#fff;
+	#footer_1{
+		.bx{
+			@include bx();
+			height:198px;
+			overflow: hidden;
+			color:#6c6c6c;
+			ul{
+				margin-top:35px;
+				margin-right:50px;
+				margin-left:10px;
+				li{
+					cursor: pointer;
+					font-size:14px;
+					margin-bottom:10px;
+					&:nth-of-type(1){
+						font-weight: bold;
+						cursor:auto;
+					}
+				}
+				&:last-of-type{
+					li{
+						&:last-of-type{						
+							cursor:auto;
+							margin:-2px 0;
+							font-size: 12px;
+							font-weight: bold;
+							color:#00c8ff;
+						}
+						&:nth-of-type(4){
+							cursor:auto;
+							margin:-2px 0;
+							font-size: 12px;
+							font-weight: bold;
+							color:#00c8ff;
+						}
+
+					}
+				}
+			}
+			dl{
+				margin:35px 0 0 40px;
+				dt{
+					display: inline-block;
+					font-weight: bold;
+					font-size: 14px;
+					padding-left:5px;
+				}
+				dd{
+					margin:10px;
+					img{
+						width:95px;
+						height:95px;
+					}
+				}
+			}
+		}
+	}
+	#footer_2{
+		background:$menubg;
+		height:35px;
+		.bx{
+			@include bx();
+			height:35px;
+			line-height: 35px;
+			ul{
+				text-align:center;
+				li{
+					width:134px;
+					text-align: center;
+					display: inline-block;
+					font-family: "微软雅黑";
+					font-size:14px;
+					color:#fff;
+					font-weight: bold;
+					&:nth-of-type(1){
+						background:url(../images/assure2.png) no-repeat;
+					}
+					&:nth-of-type(2){
+						background:url(../images/assure2.png) no-repeat;
+						background-position: 0 -35px;
+					}
+					&:nth-of-type(3){
+						background:url(../images/assure2.png) no-repeat;
+						background-position: 0 -70px;
+					}
+					&:nth-of-type(4){
+						background:url(../images/assure2.png) no-repeat;
+						background-position: 0 -105px;
+					}
+				}
+			}
+
+		}
+	}
+	#footer_3{
+		.bx{
+			@include bx();
+			height:182px;
+			padding-top:20px;
+			p{
+				text-align: center;
+				color:#6c6c6c;
+				margin-top:10px;
+			}
+		}
+	}
+
+}

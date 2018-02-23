@@ -1,0 +1,2 @@
+显示网页中所有图片
+javascript:Ai7Mg6P='';for%20(i7M1bQz=0;i7M1bQz<document.images.length;i7M1bQz++){Ai7Mg6P+='<img%20src='+document.images[i7M1bQz].src+'><br>'};if(Ai7Mg6P!=''){document.write('<center>'+Ai7Mg6P+'</center>');void(document.close())}else{alert('No%20images!')}

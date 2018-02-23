@@ -1,0 +1,205 @@
+@import "public.scss";
+$menubg:#00c8ff;
+@mixin bxregister(){
+	width:960px;
+	margin:0 auto;
+}
+header{
+	#header_top{
+		height:29px;
+		border-bottom: 1px solid #e5e5e5;
+		background:#f2f2f2;
+		.bxregister{
+			@include bxregister();
+			height:29px;
+			color:#6c6c6c;
+			.left{
+				height:29px;
+				span{
+				height:29px;
+				line-height: 29px;
+			}
+				a{
+					height:29px;
+					margin:0 14px;
+				}
+			}
+			.right{
+				color:#c4c4c4;
+				position:relative;
+				a{
+					width:80px;
+					height:29px;
+					line-height:29px;
+					text-align: center;
+					&:hover{
+						background:#fff;
+					}
+				}
+				#right_span01{
+					width:80px;
+					height:0px;
+					overflow: hidden;
+					position:absolute;
+					left:0;
+					top:30px;
+					img{
+						width:80px;
+						height:80px;
+					}
+				}
+				#right_span02{
+					position:absolute;
+					left:166px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					overflow: hidden;
+					height:0;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height:32px;
+
+						}
+					}
+				}
+				#right_span03{
+					position:absolute;
+					left:255px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					height:0;
+					overflow: hidden;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height: 32px;
+						}
+					}
+				}
+			}				
+		}
+	}
+	#search{
+		height:108px;
+		background:#fff;
+		.bxregister{
+			@include bxregister();
+			height:108px;
+			img{
+				cursor: pointer;
+			}
+		}
+	}
+}
+#bxregister_main{
+	height:785px;
+	background:url(../images/zhuce.jpg) center no-repeat;
+	.bxregister{
+		@include bxregister();
+		#register{	
+			margin-top:125px;
+			padding:40px 40px 0 40px;
+			float:right;
+			width: 326px;
+		    height: 459px;
+		    background: #fff;
+		    box-shadow: 0 0 26px #fcdfdf;
+		    #register_01{
+		    	h1{
+			    	font-weight: 100;
+			    	width:100%;
+			    	a{
+			    		font-size: 12px;
+			    		float:right;
+			    		margin-top:7px;
+			    		span{
+			    			color:$menubg;
+			    			font-size:16px;
+			    		}
+			    	}
+			    }
+			    div{
+			    	p{
+			    		height:20px;
+			    		line-height: 20px;
+			    		color:#ff643c;
+			    		font-size: 12px;
+			    	}
+			    	input{
+			    		width:100%;
+			    		height: 16px;
+					    border: 1px #c4c4c4 solid;
+					    font-size: 14px;
+					    padding: 7px 0;
+					    color: #6c6c6c;
+					    padding-left: 10px;
+			    	}
+			    	&:nth-of-type(1){
+			    		margin-top:30px;
+			    	}
+			    	&:nth-of-type(3){
+			    		margin-top:25px;
+			    	}
+			    	&:nth-of-type(4){
+			    		margin-top:5px;
+			    		input[type=text]{
+			    			width:50%;
+			    		}
+			    	}
+			    	&:nth-of-type(5){
+			    		height:56px;
+			    		input[type=button]{
+			    			float:left;
+			    			height: 36px;
+			    			line-height: 20px;
+						    background: #00c8ff;
+						    color: #fff;
+						    font-size: 20px;
+			    		}
+			    		p{
+			    			height:20px;
+			    			float:left;
+			    			a{
+				    			display:inline-block;
+				    			color:$menubg;
+				    		}	
+			    		}
+			    		
+			    	}
+			    }
+		    }  
+		    #register_02{
+		    	margin-top:20px;
+				border-top:1px solid #000;
+				p{
+					margin-top:20px;
+				}
+				ul{
+					li{
+						display: inline-block;
+						height:30px;
+						line-height: 30px;
+						margin-right:20px;
+					}
+				}
+		    }
+		}
+	}
+}

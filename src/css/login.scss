@@ -1,0 +1,197 @@
+@import "public.scss";
+$menubg:#00c8ff;
+@mixin bxlogin(){
+	width:960px;
+	margin:0 auto;
+}
+header{
+	#header_top{
+		height:29px;
+		border-bottom: 1px solid #e5e5e5;
+		background:#f2f2f2;
+		.bxlogin{
+			@include bxlogin();
+			height:29px;
+			color:#6c6c6c;
+			.left{
+				height:29px;
+				span{
+				height:29px;
+				line-height: 29px;
+			}
+				a{
+					height:29px;
+					margin:0 14px;
+				}
+			}
+			.right{
+				color:#c4c4c4;
+				position:relative;
+				a{
+					width:80px;
+					height:29px;
+					line-height:29px;
+					text-align: center;
+					&:hover{
+						background:#fff;
+					}
+				}
+				#right_span01{
+					width:80px;
+					height:0px;
+					overflow: hidden;
+					position:absolute;
+					left:0;
+					top:30px;
+					img{
+						width:80px;
+						height:80px;
+					}
+				}
+				#right_span02{
+					position:absolute;
+					left:166px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					overflow: hidden;
+					height:0;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height:32px;
+
+						}
+					}
+				}
+				#right_span03{
+					position:absolute;
+					left:255px;
+					top:29px;
+					border-left:1px solid #ccc;
+					border-right:1px solid #ccc;
+					display: inline-block;
+					width:72px;
+					padding-left:10px;
+					z-index: 5;
+					background:#fff;
+					height:0;
+					overflow: hidden;
+					ul{
+						li{
+							cursor: pointer;
+							color:#6c6c6c;
+							height:32px;
+							line-height: 32px;
+						}
+					}
+				}
+			}				
+		}
+	}
+	#search{
+		height:108px;
+		background:#fff;
+		.bxlogin{
+			@include bxlogin();
+			height:108px;
+			img{
+				cursor: pointer;
+			}
+		}
+	}
+}
+#login_main{
+	height:785px;
+	background:url(../images/login1.jpg) center no-repeat;
+	.bxlogin{
+		@include bxlogin();
+		#login{
+			width:326px;
+			height:489px;
+			background:#fff;
+			margin-top:125px;
+			float: right;
+			box-shadow: 0 0 26px #fcdfdf;
+			padding:40px 40px 0 40px;
+			#login_01{
+				span{
+					font-size: 24px;
+					a{
+						margin-top:7px;
+						float:right;
+						font-weight: 100;
+						font-size: 16px;
+						color:$menubg;
+					}
+				}
+				div{
+					#login_password_tishi{
+					    font-size: 12px;
+					    color: #ff643c;
+					    margin-top: 3px;
+					    float:right;
+					}
+					font-size: 16px;
+					p{
+						height:24px;
+						line-height: 22px;
+					}
+					&:nth-of-type(1){
+						margin-top:30px;
+					}
+					&:nth-of-type(3){
+						input[type=text]{
+							width:50%;
+						}
+					}
+					&:nth-of-type(4){
+						font-size:13px;
+					}
+					input[type=text]{
+						width:97%;
+						height: 16px;
+						border: 1px #c4c4c4 solid;
+	    				font-size: 14px;
+	    				padding: 7px 0;
+					    color: #6c6c6c;
+					    padding-left: 10px;
+					}
+				}
+				input[type=button]{
+					width:100%;
+					height:36px;
+					background:$menubg;
+					line-height: 36px;
+	   				font-size: 20px;
+	   				color:#fff;
+	   				letter-spacing: 6px;
+	   				margin-top:10px;
+				}	
+			}
+			#login_02{
+				margin-top:20px;
+				border-top:1px solid #000;
+				p{
+					margin-top:20px;
+				}
+				ul{
+					li{
+						display: inline-block;
+						height:30px;
+						line-height: 30px;
+						margin-right:20px;
+					}
+				}
+			}
+
+		}
+	}
+}
