@@ -1,1 +1,2 @@
 PHP需要放置在 wamp中的www文件夹下
+本项目是用gulp中开发,所以上传的是src和gulpfire
